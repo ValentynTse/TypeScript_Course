@@ -1,1 +1,1 @@
-# TypeScript_Course
+# type_script
