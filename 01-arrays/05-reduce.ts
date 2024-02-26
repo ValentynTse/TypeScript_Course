@@ -15,9 +15,9 @@
 // initialValue
 // Необов'язковий параметр. Об'єкт, що використовується як перший аргумент при першому виклику функції callback.
 
-const values: number[] = [10, 2, 3, 4, 5, 6];
+const valuesArr: number[] = [10, 2, 3, 4, 5, 6];
 
-const total: number = values.reduce((prev, current) => {
+const total: number = valuesArr.reduce((prev, current) => {
   console.log('prev ' + prev + ' current ' + current);
   return prev + current;
 }, 0);

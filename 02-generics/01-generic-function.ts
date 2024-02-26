@@ -6,21 +6,21 @@
 
 // Type variable буде зберігати тип даних, який надасть користувач функції під час її виклику.
 
-function myFunc<T>(value: T): T {
+function myFuncOne<T>(value: T): T {
   return value;
 }
 
 // функція myFunc приймає та повертає рядок. Тип даних вказано явно у кутових дужках
-const value1 = myFunc<string>('test');
+const value1 = myFuncOne<string>('test');
 
 // функція приймає та повертає число. У цьому випадку використовується type argument inference
 // компілятор самостійно визначать який тип потрібно використовувати
-const value2 = myFunc<number>(10);
+const value2 = myFuncOne<number>(10);
 
 // generic має значн перевагу над any в плані типізації
-function myFunc2(value: any): any {
+function myFuncTwo(value: any): any {
   return value;
 }
 
-const value3 = myFunc2('test');
-const value4 = myFunc2(10);
+const value3 = myFuncTwo('test');
+const value4 = myFuncTwo(10);

@@ -29,10 +29,10 @@ class OrdersArchive implements Countable {
   ) {}
 }
 
-const list = new SortableList<OrdersArchive>();
+const myList = new SortableList<OrdersArchive>();
 
-list.add(new OrdersArchive('January', 5, 23400));
-list.add(new OrdersArchive('February', 2, 18100));
-list.add(new OrdersArchive('March', 10, 22900));
+myList.add(new OrdersArchive('January', 5, 23400));
+myList.add(new OrdersArchive('February', 2, 18100));
+myList.add(new OrdersArchive('March', 10, 22900));
 
-list.showSorted();
+myList.showSorted();
