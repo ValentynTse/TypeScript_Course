@@ -14,17 +14,17 @@ const usersArray = [
 ];
 
 // Код відпрацює, але це поганий варіант використання методу filter якшо нам потрібно знайти лише один елемент зі списку
-const user1 = usersArray.filter((user, index) => {
+const userOne = usersArray.filter((user, index) => {
   console.log(index);
   return user.role === 'admin';
 });
 
-console.log(user1);
+console.log(userOne);
 
 // Метод find підходить в тих випадках коли вам потрібно знайти лише один елесент зі списку
-const user2 = usersArray.find((user, index) => {
+const userTwo = usersArray.find((user, index) => {
   console.log(index);
   return user.role === 'admin';
 });
 
-console.log(user2);
+console.log(userTwo);

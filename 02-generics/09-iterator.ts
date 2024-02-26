@@ -15,9 +15,9 @@ interface MyIteratorResult<T> {
   value: T;
 }
 
-class Point {
-  constructor(public x: number, public y: number) {}
-}
+// class Point {
+//   constructor(public x: number, public y: number) {}
+// }
 
 // колекцiя
 class Vector implements MyIterable<Point> {
@@ -54,10 +54,10 @@ class VectorIterator implements MyIterator<Point> {
 }
 
 const vector: Vector = new Vector();
-vector.add(new Point(10, 20));
-vector.add(new Point(1, 30));
-vector.add(new Point(0, 2));
-vector.add(new Point(15, 12));
+// vector.add(new Point(10, 20));
+// vector.add(new Point(1, 30));
+// vector.add(new Point(0, 2));
+// vector.add(new Point(15, 12));
 
 // використання ітератора
 const iterator = vector.values();

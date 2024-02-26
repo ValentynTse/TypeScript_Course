@@ -24,12 +24,12 @@ console.log(c2);
 // оскільки першому елементу явно встановлено значення 2,
 // всі наступні продовжуватимуть нумерацію з 2
 // Circle = 2, Triangle = 3, Square = 4
-enum Shape {
+enum MyShape {
     Circle = 'circle',
     Triangle = 'triangle',
     Square = 'square',
 }
-const c3: Shape = Shape.Square;
+const c3: MyShape = MyShape.Square;
 console.log(c3);
 
 // звертаючись до перерахування через індексатор та

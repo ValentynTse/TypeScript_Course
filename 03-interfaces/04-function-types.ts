@@ -13,5 +13,5 @@ myFunc1 = function (value: string): boolean {
 const myFunc2: MyFunc = function (data: string): boolean {
     return true;
 };
-const result = myFunc1('Cat');
-console.log(result);
+const theResult = myFunc1('Cat');
+console.log(theResult);
